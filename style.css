@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    padding: 60px 0 100px;
+    text-align: center;
+}
+
+.main-display {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: fit-content;
+    height: fit-content;
+    margin-inline: auto;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: fit-content;
+    height: fit-content;
+}
+.cell {
+    height: 60px;
+    width: 60px;
+    background-color: rgba(35, 34, 80, 0.5);
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+}
+.cell:last-child {
+    border-right: 1px solid black;
+}
+.row:last-of-type .cell {
+    border-bottom: 1px solid black;
+}
