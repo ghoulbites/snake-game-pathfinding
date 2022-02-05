@@ -1,2 +1,3 @@
 # snake-game-pathfinding
- Snake Game with Automated Pathfinding
+
+Snake Game with Automated Path Finding
