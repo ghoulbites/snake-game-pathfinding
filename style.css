@@ -1,8 +1,30 @@
+<<<<<<< Updated upstream
+=======
+:root {
+    --background-main: #fff;
+    --accent-main: #1f4eb6;
+    --black-main: #000000;
+    --grey-medium: #3b3b3b;
+    --red-error: #ff0033;
+    --border-thickness: 2px;
+    --cell-size: 10px;
+    --display-size: min(90vw, 90vh);
+    --food: #dd0000;
+    --snake-head: #008000;
+    --snake-body: #0000ca;
+}
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+>>>>>>> Stashed changes
 * {
     margin: 0;
     padding: 0;
+    font-family: "Open Sans", "Helvetica", "Trebuchet MS", "Lucida Sans",
+        "Lucida Sans Regular", sans-serif;
+    background-color: var(--background-main);
 }
 
+<<<<<<< Updated upstream
 .main-container {
     background-color: black;
     padding: 20px 100px 0;
@@ -35,6 +57,142 @@
 }
 .board-row:first-child .board-square {
     border-top: 1px solid grey;
+=======
+h1 {
+    text-align: center;
+    padding: 3% 0 18%;
+    max-height: 10vh;
+    box-sizing: border-box;
+}
+
+.main-container {
+}
+.wrapper:not(.wrapper:last-of-type) {
+    padding: 0 20vw;
+    box-sizing: border-box;
+}
+
+form {
+    display: grid;
+}
+form > label,
+form .title-span {
+    font-size: 1.25rem;
+    max-width: fit-content;
+}
+form .input-group {
+    display: grid;
+    grid-auto-flow: row;
+}
+form .input-group input {
+    padding: 0.5rem 0.75rem;
+    border-radius: 1.5rem;
+    border: var(--border-thickness) solid var(--black-main);
+    margin: 0.25rem 0 0;
+    font-size: 1.25rem;
+}
+form .input-group input:focus {
+    outline: var(--accent-main) unset var(--border-thickness);
+    border: none;
+}
+form .input-group .error-span {
+    position: relative;
+    left: 1.5rem;
+    color: var(--red-error);
+    font-size: 0.875rem;
+}
+form .input-radio-group {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-template-rows: auto;
+    row-gap: 0.375rem;
+}
+form .input-group,
+form .input-radio-group {
+    margin-bottom: 1rem;
+}
+form input[type="radio"]:checked {
+    accent-color: var(--accent-main);
+}
+form .input-radio-group input {
+    grid-column: 1;
+    margin: auto 1rem;
+    min-height: 100%;
+    min-width: 1.125rem;
+}
+form .input-radio-group label {
+    grid-column: 2;
+    font-size: 1.125rem;
+    max-width: max-content;
+}
+form .title-span {
+    margin: 0 0 0.375rem;
+}
+form .submit-btn {
+    margin-inline: auto;
+    max-width: max-content;
+    border: var(--border-thickness) solid var(--black-main);
+    border-radius: 1.5rem;
+    background-color: var(--accent-main);
+    padding: 0.625rem 1rem;
+    font-size: 1.125rem;
+    cursor: pointer;
+    transition: 100ms ease-in;
+}
+form .submit-btn:hover {
+    background-color: var(--background-main);
+}
+
+.wrapper:last-of-type {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    box-sizing: border-box;
+}
+.game-info-display {
+    display: grid;
+    grid-auto-flow: column;
+    min-width: var(--display-size);
+    margin-inline: auto;
+}
+.game-info-display * {
+    position: relative;
+    font-size: 1.25rem;
+    margin: 1rem 0;
+}
+.game-info-display > *:last-child {
+    text-align: right;
+}
+.game-info-display
+    > *:not(.game-info-display > *:last-child):not(.game-info-display
+        > *:first-child) {
+    text-align: center;
+}
+.main-display {
+    display: grid;
+    grid-auto-flow: row;
+    min-height: var(--display-size);
+    min-width: var(--display-size);
+    margin-inline: auto;
+}
+.row {
+    display: grid;
+    grid-auto-flow: column;
+}
+.cell {
+    min-height: var(--cell-size);
+    min-width: var(--cell-size);
+    background-color: var(--black-main);
+    border-top: 1px solid var(--grey-medium);
+    border-left: 1px solid var(--grey-medium);
+    transition: 130ms ease-out;
+}
+.cell:last-child {
+    border-right: 1px solid var(--grey-medium);
+}
+.row:last-of-type .cell {
+    border-bottom: 1px solid var(--grey-medium);
+>>>>>>> Stashed changes
 }
 
 

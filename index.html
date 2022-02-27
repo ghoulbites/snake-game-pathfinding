@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< Updated upstream
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,4 +23,91 @@
         </div>
     </div>
 </body>
+=======
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Snake Game With Path Finding</title>
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="rewrite.js" defer></script>
+    <!--
+        <script src="script.js" defer></script>
+    -->
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="wrapper">
+            <h1>Snake Game</h1>
+        </div>
+
+        <div class="wrapper">
+            <form>
+                <label for="widthInput">Width:</label>
+                <div class="input-group">
+                    <input type="number" id="widthInput" min="5" max="500" value="15">
+                    <span class="error-span"></span>
+                </div>
+
+                <label for="heightInput">Height:</label>
+                <div class="input-group">
+                    <input type="number" id="heightInput" min="5" max="500" value="15">
+                    <span class="error-span"></span>
+                </div>
+
+                <span class="title-span">Difficulty:</span>
+                <div class="input-radio-group">
+                    <input type="radio" name="difficultyRadio" id="difficultyOptionVeryEasy" value="1">
+                    <label for="difficultyOptionVeryEasy">Pay attention and you'll be fine</label>
+
+                    <input type="radio" name="difficultyRadio" id="difficultyOptionEasy" value="2">
+                    <label for="difficultyOptionEasy">Easy Peasy</label>
+
+                    <input type="radio" name="difficultyRadio" id="difficultyOptionNormal" value="3" checked>
+                    <label for="difficultyOptionNormal">The Classic Experience</label>
+
+                    <input type="radio" name="difficultyRadio" id="difficultyOptionHard" value="4">
+                    <label for="difficultyOptionHard">Getting Fast</label>
+
+                    <input type="radio" name="difficultyRadio" id="difficultyOptionVeryHard" value="5">
+                    <label for="difficultyOptionVeryHard">Maybe you won't be okay...</label>
+
+                    <input type="radio" name="difficultyRadio" id="difficultyOptionExtreme" value="6">
+                    <label for="difficultyOptionExtreme">Write/Get a bot first</label>
+                </div>
+
+                <!-- TO BE IMPLEMENTED LATER
+                    <label for="enableAICheck">Enable AI:</label>
+                    <input type="checkbox" id="enableAICheck">
+        
+                    <span class="title-span">AI Type:</span>
+                    <div class="input-radio-group">
+                        <input type="radio" name="aiType" id="aStar-Manhattan" value="1">
+                        <label for="aStar-Manhattan">A* Algorithm (Simple & Fast)</label>
+
+                        <input type="radio" name="aiType" id="aStar-Diagonal" value="2">
+                        <label for="aStar-Diagonal">A* Algorithm (Decent)</label>
+
+                        <input type="radio" name="aiType" id="aStar-Euclidian" value="3">
+                        <label for="aStar-Euclidian">A* Algorithm (Complex & Slow but Accurate)</label>
+                    </div>
+                -->
+                <button class="submit-btn">Submit</button>
+            </form>
+        </div>
+
+        <div class="wrapper">
+            <div class="game-info-display">
+                <div data-game-score></div>
+                <div data-game-direction></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+>>>>>>> Stashed changes
 </html>
