@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 :root {
     --background-main: #fff;
     --accent-main: #1f4eb6;
@@ -13,60 +11,26 @@
     --snake-head: #008000;
     --snake-body: #0000ca;
 }
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
 
->>>>>>> Stashed changes
 * {
     margin: 0;
     padding: 0;
-    font-family: "Open Sans", "Helvetica", "Trebuchet MS", "Lucida Sans",
+    font-family: "Open Sans", Helvetica, "Trebuchet MS", "Lucida Sans",
         "Lucida Sans Regular", sans-serif;
     background-color: var(--background-main);
 }
 
-<<<<<<< Updated upstream
-.main-container {
-    background-color: black;
-    padding: 20px 100px 0;
-    min-height: 100vh;
+.wrapper:first-of-type {
+    min-height: 10vh;
+    max-height: 10vh;
 }
-
-.board-display {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: auto;
-}
-.board-row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-}
-.board-square {
-    display: inline-block;
-    border-right: 1px solid grey;
-    border-bottom: 1px solid grey;
-    width: 100px;
-    height: 100px;
-    box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-}
-.board-square:first-child {
-    border-left: 1px solid grey;
-}
-.board-row:first-child .board-square {
-    border-top: 1px solid grey;
-=======
 h1 {
     text-align: center;
-    padding: 3% 0 18%;
-    max-height: 10vh;
-    box-sizing: border-box;
+    position: relative;
+    margin-top: 20%;
 }
 
-.main-container {
-}
 .wrapper:not(.wrapper:last-of-type) {
     padding: 0 20vw;
     box-sizing: border-box;
@@ -87,13 +51,22 @@ form .input-group {
 form .input-group input {
     padding: 0.5rem 0.75rem;
     border-radius: 1.5rem;
-    border: var(--border-thickness) solid var(--black-main);
+    /* border: var(--border-thickness) solid var(--black-main); */
+    border: none;
     margin: 0.25rem 0 0;
     font-size: 1.25rem;
+    box-sizing: border-box;
+    transition: 130ms ease-in;
 }
-form .input-group input:focus {
-    outline: var(--accent-main) unset var(--border-thickness);
-    border: none;
+form .input-group input[type="range"] {
+    width: calc(100% - 1.5rem);
+    margin-inline: auto;
+}
+form .input-group input[type="number"] {
+    outline: var(--black-main) solid var(--border-thickness);
+}
+form .input-group input[type="number"]:focus {
+    outline: var(--accent-main) solid var(--border-thickness);
 }
 form .input-group .error-span {
     position: relative;
@@ -192,7 +165,4 @@ form .submit-btn:hover {
 }
 .row:last-of-type .cell {
     border-bottom: 1px solid var(--grey-medium);
->>>>>>> Stashed changes
 }
-
-
