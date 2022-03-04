@@ -21,19 +21,27 @@
     background-color: var(--background-main);
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    box-sizing: border-box;
+}
+.wrapper:not(.wrapper:last-of-type) {
+    padding: 0 20vw;
+    box-sizing: border-box;
+}
 .wrapper:first-of-type {
     min-height: 10vh;
     max-height: 10vh;
 }
-h1 {
-    text-align: center;
-    position: relative;
-    margin-top: 20%;
+.wrapper:last-of-type {
+    padding-bottom: 2rem;
 }
-
-.wrapper:not(.wrapper:last-of-type) {
-    padding: 0 20vw;
-    box-sizing: border-box;
+h1 {
+    display: block;
+    text-align: center;
+    margin: auto 0;
 }
 
 form {
@@ -116,12 +124,6 @@ form .submit-btn:hover {
     background-color: var(--background-main);
 }
 
-.wrapper:last-of-type {
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-    box-sizing: border-box;
-}
 .game-info-display {
     display: grid;
     grid-auto-flow: column;

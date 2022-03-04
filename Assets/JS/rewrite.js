@@ -59,7 +59,7 @@ function CreateDisplay(x, y) {
     } else {
         gameDisplay = document.createElement("div")
         gameDisplay.className = "main-display"
-        gameDisplayContainer.appendChild(gameDisplay)
+        gameDisplayWrapper.appendChild(gameDisplay)
     }
 
     const displayDocumentFrag = document.createDocumentFragment()
